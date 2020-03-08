@@ -1,0 +1,420 @@
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(99, 11, 89, 0.753))), url(../images/header.png);
+  background: linear-gradient(rgba(99, 11, 89, 0.753)), url(../images/header.png);
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/background.png);
+  z-index: -1;
+}
+
+header nav .navbar-nav {
+  margin-top: 12px !important;
+  margin-left: 90px !important;
+}
+
+header nav .nav-item {
+  margin: auto 10px;
+}
+
+header nav .nav-item .nav-link {
+  font-size: 11.33px;
+  color: white !important;
+  padding: 4px 50px;
+}
+
+header nav .nav-item .nav-link:hover {
+  background: rgba(255, 255, 255, 0.356);
+  border-radius: 30px;
+}
+
+header nav .nav-item .create {
+  font-size: 12px;
+  background: #ee5c7e;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+header nav .nav-item .create img {
+  margin-right: 7px;
+  padding-bottom: 2px;
+}
+
+header .heading {
+  padding: 30px 0;
+}
+
+header .heading h1,
+header .heading p {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  padding: 5px 20px 5px 200px;
+  margin-bottom: 20px;
+}
+
+header .heading h1::before,
+header .heading p::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.356);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 5px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  header .heading h1,
+  header .heading p {
+    padding: 5px 20px 5px 10px;
+  }
+}
+
+header .heading .para {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  header .heading .para {
+    width: 100%;
+  }
+}
+
+header .heading .para p {
+  font-size: 15px;
+}
+
+header .details {
+  padding-left: 200px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header .details {
+    padding-left: 10px;
+  }
+}
+
+header .details span {
+  margin-right: 12px;
+  border-right: 1px solid white;
+  padding-right: 20px;
+  color: white;
+  font-size: 12.3px;
+}
+
+@media screen and (max-width: 768px) {
+  header .details span {
+    padding-right: 3px;
+  }
+}
+
+header .details span:last-child {
+  border: none;
+}
+
+header .details span img {
+  margin-right: 15px;
+}
+
+/****End of header*****/
+main {
+  background: url(../images/header.png);
+  background-size: cover;
+  padding: 10px 0 30px;
+  position: relative;
+}
+
+main .container {
+  position: relative;
+}
+
+main .container .btn:focus {
+  outline: none !important;
+}
+
+main .container .dropdown-menu {
+  -webkit-transform: translate3d(-134px, 28px, 0px) !important;
+          transform: translate3d(-134px, 28px, 0px) !important;
+}
+
+main .modal-dialog {
+  max-width: 70%;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+main .modal-dialog .modal-content {
+  height: auto;
+}
+
+main .modal-dialog .modal-content .modal-header {
+  background: #704ea3;
+  font-weight: 400;
+  color: white;
+}
+
+main .modal-dialog .modal-content .modal-header button {
+  color: white;
+}
+
+main .modal-dialog .modal-content .modal-body .school {
+  padding-left: 110px;
+}
+
+@media screen and (max-width: 768px) {
+  main .modal-dialog .modal-content .modal-body .school {
+    padding-left: 20px;
+  }
+}
+
+main .modal-dialog .modal-content .modal-body .school h5 {
+  font-weight: 400;
+  color: #676665;
+}
+
+@media screen and (max-width: 768px) {
+  main .modal-dialog .modal-content .modal-body .school h5 {
+    padding-left: 20px;
+  }
+}
+
+main .modal-dialog .modal-content .modal-body input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  main .modal-dialog .modal-content .modal-body input {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .modal-dialog .modal-content .modal-body #inputState {
+    margin-left: 9px;
+  }
+}
+
+main .modal-dialog .modal-content .modal-body .schools {
+  position: relative;
+  margin: 20px;
+  border: 1px solid #67666541;
+  padding: 35px 20px;
+}
+
+main .modal-dialog .modal-content .modal-body .schools .fa-trash {
+  color: red;
+  font-size: 22px;
+  padding: 10px 20px;
+}
+
+main .modal-dialog .modal-content .modal-body .schools label {
+  font-size: 13px;
+  color: #676665af;
+}
+
+@media screen and (max-width: 768px) {
+  main .modal-dialog .modal-content .modal-body .schools label {
+    padding-left: 20px;
+  }
+}
+
+main .modal-dialog .modal-content .modal-body .schools span,
+main .modal-dialog .modal-content .modal-body .schools i {
+  color: #704ea3;
+}
+
+main .modal-dialog .modal-content .modal-body .schools i {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+main .modal-dialog .modal-content .modal-body .schools span {
+  font-size: 16px;
+}
+
+main .modal-dialog .modal-content .modal-body .schools .done span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main .modal-dialog .modal-content .modal-body .schools .done span:first-child {
+  padding-right: 10px;
+}
+
+main .modal-dialog .modal-content .modal-body .schools .done span:last-child {
+  color: black;
+}
+
+main .social {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ee5c7e;
+  border-radius: 50%;
+  right: 50px;
+  bottom: 10px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+main .search {
+  border-bottom: 1px solid #c6c6c6;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  main .search {
+    margin-left: 10px;
+  }
+}
+
+main .search input {
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+main .search input:focus {
+  outline: none;
+}
+
+main .search img {
+  width: 17px;
+  height: 17px;
+  margin-top: 15px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main .search img {
+    margin-left: 40px;
+  }
+}
+
+main .contaier-classes {
+  margin: 10px 0 20px 100px;
+  width: 82%;
+}
+
+@media screen and (max-width: 768px) {
+  main .contaier-classes {
+    width: 100%;
+    margin: 30px auto;
+  }
+}
+
+main .contaier-classes .classes {
+  position: relative;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+main .contaier-classes .classes:hover {
+  -webkit-box-shadow: -7px -2px 12px 5px #cec1c1;
+          box-shadow: -7px -2px 12px 5px #cec1c1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .contaier-classes .classes:hover .class-id {
+  background: #8f267b;
+}
+
+main .contaier-classes .classes .class-id {
+  width: 10%;
+  background: #919191;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 10px;
+  color: white;
+  font-size: 21.5px;
+}
+
+main .contaier-classes .classes .old-classes {
+  padding-left: 20px;
+}
+
+main .contaier-classes .classes .old-classes .black {
+  color: black;
+}
+
+main .contaier-classes .classes .old-classes h3 {
+  font-size: 18px;
+  padding-top: 12px;
+  color: #676665;
+}
+
+main .contaier-classes .classes .old-classes p,
+main .contaier-classes .classes .old-classes span {
+  color: #939393;
+  font-size: 12.8px;
+}
+
+main .contaier-classes .classes .old-classes p {
+  margin-bottom: 5px;
+}
+
+main .contaier-classes .classes .old-classes span {
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+main .contaier-classes .classes input {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 12px;
+  padding: 5px 0 5px 10px;
+  border: 1px solid #cccccc;
+}
+
+footer {
+  background: #8f267b;
+  padding: 8px;
+}
+/*# sourceMappingURL=main.css.map */
